@@ -1,13 +1,18 @@
 $(document).ready(function(){
 
-var chapter = [ STATELY, PLUMP BUCK MULLIGAN CAME FROM THE STAIRHEAD, bearing a bowl of lather on which a mirror and a razor lay crossed. A yellow dressing gown, ungirdled, was sustained gently-behind him by the mild morning air. He held the bowl aloft and intoned: Introibo ad altare Dei. Halted, he peered down the 
-];
+var chapter = "STATELY, PLUMP BUCK MULLIGAN CAME FROM THE STAIRHEAD, bearing a bowl of lather on which a mirror and a razor lay crossed. A yellow dressing gown, ungirdled, was sustained gently-behind him by the mild morning air. He held the bowl aloft and intoned: Introibo ad altare Dei. Halted, he peered down the" 
+
+let words = chapter.split(" ");
 
 
+for (i=0; i<words.length; i++){
 	//so NO, buttonWord should be a value in the array...
-	var buttonWord = $(this).data('name');
+	//var word = $(this).data('name');
+
+    //okay this is interesting... we got a real freakout here, but it's working, something's working
+    let word = words[i];
     ///put our actual new API key here...
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + buttonWord + "&api_key=dc6zaTOxFJmzC";
+    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + word + "&api_key=G3lLz1LwwD6VRySY0kEddhrhDoHrzGeX";
     $.ajax({
         url: queryURL,
         method: 'GET'
@@ -21,10 +26,6 @@ var chapter = [ STATELY, PLUMP BUCK MULLIGAN CAME FROM THE STAIRHEAD, bearing a 
 
                     var gifDiv = $('<div/>');
 
-                    var rating =$('<div/>');
-
-                    rating.text(results[i].rating);
-
                     var gif = $('<img/>');
 
                     gif.addClass('myImg')
@@ -37,9 +38,9 @@ var chapter = [ STATELY, PLUMP BUCK MULLIGAN CAME FROM THE STAIRHEAD, bearing a 
 
                     gif.attr('data-state', 'still');
 
-                    gifDiv.append(rating);
-
                     gifDiv.append(gif);
+
+                    gifDiv.append('<h1>' + word + '</h1>');
 
                     gifDiv.prependTo($('#gifs-here'));
 
@@ -47,4 +48,8 @@ var chapter = [ STATELY, PLUMP BUCK MULLIGAN CAME FROM THE STAIRHEAD, bearing a 
 
   }
 
+});
+
+//end of 1st loop
+}
 });
