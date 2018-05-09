@@ -56,7 +56,7 @@ for (i=0; i<words.length; i++){
 //it's not recognizing the i from the loop... okay, I can hone in on this. 
                     gifDiv.append('<h1>' + word + '</h1>');
 
-                    gifDiv.prependTo($('#gifs-here'));
+                    gifDiv.appendTo($('#gifs-here'));
 
 
 //}
