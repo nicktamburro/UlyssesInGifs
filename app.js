@@ -3,6 +3,7 @@ $(document).ready(function(){
 var chapter = "STATELY, PLUMP BUCK MULLIGAN CAME FROM THE STAIRHEAD, bearing a bowl of lather on which a mirror and a razor lay crossed. A yellow dressing gown, ungirdled, was sustained gently-behind him by the mild morning air. He held the bowl aloft and intoned: Introibo ad altare Dei. Halted, he peered down the" 
 
 let words = chapter.split(" ");
+console.log(words);
 //1. we split the chapter into an array of single words, called "words"
 
 //it's giving us just the first word... a lot of times. it's a start. 
@@ -19,6 +20,7 @@ for (i=0; i<words.length; i++){
 //3."word" is whatever word we're on in the loop...
     let word = words[i];
 
+
 //4. we make our API call, putting the current word in:
     var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + word + "&api_key=G3lLz1LwwD6VRySY0kEddhrhDoHrzGeX";
     $.ajax({
@@ -26,7 +28,7 @@ for (i=0; i<words.length; i++){
         method: 'GET'
         })
         .done(function(response) {
-			console.log(response)
+			//console.log(response)
 
                 var results = response.data;
 
@@ -42,6 +44,7 @@ for (i=0; i<words.length; i++){
 
                     gif.addClass('myImg');
 
+                    //also getting an error with "can't read images of undefined"
                     gif.attr('src', results[0].images.fixed_height.url);
 
                     gif.attr('data-still', results[0].images.fixed_height_still.url)
