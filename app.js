@@ -30,6 +30,9 @@ $.when(...chapter.split(" ").map(word => {
         });
         })).then((...responses) => {
     responses.forEach(response => {
+
+        //okay so "response" here is undefined... look into that first...
+                console.log(response);
                 var results = response.data;
 
                 //I think this loop isn't right, this is making a million of the same word
