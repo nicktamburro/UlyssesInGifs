@@ -5,6 +5,8 @@ var chapter = "STATELY, PLUMP BUCK MULLIGAN CAME FROM THE STAIRHEAD, bearing a b
 let words = chapter.split(" ");
 let picDiv;
 
+
+
 for (i=0; i<words.length; i++){
 	
     let word = words[i];
@@ -22,17 +24,24 @@ for (i=0; i<words.length; i++){
         .done(function(response) {
 
                 var results = response.data;
+                console.log(word, results);
 
                 var gif = $('<img/>');
 
                     gif.addClass('myImg');
 
+                    if(results[0] == undefined){
+                        //okay yes, this is the right trigger...
+                        console.log("undefined!");
 
-        //this isn't quite right yet...
-                if(results[0] === undefined){
-                   https://giphy.com/embed/lkI1u8RYQv8IM
-                   gif.attr('src', 'https://giphy.com/embed/lkI1u8RYQv8IM');
+                        let placeholder = $("<img src='what.gif'>");
+                        picDiv.prepend(placeholder);
+                        
+                        //time for a hacky solution!
+                        //tomorrow, download a "?" gif, and just pop it in there
+                        //when we need it, no need to be fancy
 
+                    
                 }
 
                     //var gifDiv = $('<div/>');    
