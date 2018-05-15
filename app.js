@@ -1,25 +1,36 @@
 $(document).ready(function(){
 
-var chapter = "STATELY, PLUMP BUCK MULLIGAN CAME FROM THE STAIRHEAD, bearing a bowl of lather on which a mirror and a razor lay crossed. A yellow dressing gown, ungirdled, was sustained gently-behind him by the mild morning air. He held the bowl aloft and intoned: Introibo ad altare Dei. Halted, he peered down the dark winding stairs and called up coarsely" 
+var telemachus = "STATELY, PLUMP BUCK MULLIGAN CAME FROM THE STAIRHEAD, bearing a bowl of lather on which a mirror and a razor lay crossed. A yellow dressing gown, ungirdled, was sustained gently-behind him by the mild morning air. He held the bowl aloft and intoned: Introibo ad altare Dei. Halted, he peered down the dark winding stairs and called up coarsely" 
 var nestor = "YOU, COCHRANE, WHAT CITY SENT FOR HIM? -- Tarentum, sir. -- Very good. Well? -- There was a battle, sir. -- Very good. Where? The boy's blank face asked the blank window. Fabled by the daughters of memory."
 var proteus = "INELUCTABLE MODALITY OF THE VISIBLE: AT LEAST THAT IF NO MORE, thought through my eyes. Signatures of all things I am here to read, seaspawn and seawrack, the nearing tide, that rusty boot. Snotgreen, bluesilver, rust: coloured signs. Limits of the diaphane. But he adds: in bodies."
 //or no, THIS is a function that takes a chapter... easier, right? and turns whatever it is into "words"
 
-let words = chapter.split(" ");
+let words; //= chapter.split(" ");
 let picDiv;
 
 //but triggered by a dropdown click...
 //so make the click event first...
+$("#Telemachus").click(function(){
+    wordMaker(telemachus);
+})
 
+$("#Nestor").click(function() {
+  wordMaker(nestor);
+});
 
-const wordMaker = (chapter) =>{
+$("#Proteus").click(function(){
+        wordMaker(proteus);
+})
+
+function wordMaker(chapter){
         let words = chapter.split(" ");
+        gifMaker(words);
 }
 
 //okay, so now this all needs to be a function, that takes a chapter... right?
 //and then the chapter determines what "chapter" string to use...
 //this is the right way to do it...
-
+const gifMaker = (words) => {
 for (i=0; i<words.length; i++){
 	
     let word = words[i];
@@ -77,6 +88,7 @@ for (i=0; i<words.length; i++){
 
   });
     }
+};
 });
 
 
