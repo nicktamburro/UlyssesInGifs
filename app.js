@@ -2,10 +2,22 @@ $(document).ready(function(){
 
 var chapter = "STATELY, PLUMP BUCK MULLIGAN CAME FROM THE STAIRHEAD, bearing a bowl of lather on which a mirror and a razor lay crossed. A yellow dressing gown, ungirdled, was sustained gently-behind him by the mild morning air. He held the bowl aloft and intoned: Introibo ad altare Dei. Halted, he peered down the dark winding stairs and called up coarsely" 
 
+//or no, THIS is a function that takes a chapter... easier, right? and turns whatever it is into "words"
+
 let words = chapter.split(" ");
 let picDiv;
 
+//but triggered by a dropdown click...
+//so make the click event first...
 
+
+const wordMaker = (chapter) =>{
+        let words = chapter.split(" ");
+}
+
+//okay, so now this all needs to be a function, that takes a chapter... right?
+//and then the chapter determines what "chapter" string to use...
+//this is the right way to do it...
 
 for (i=0; i<words.length; i++){
 	
