@@ -5,3 +5,20 @@
 #whatgif{
 	height: 72%;
 }
+
+#siteName{
+	font-family: 'Reenie Beanie', cursive;
+	font-size: 300%;
+}
+
+#navbarDropdownMenuLink{
+	font-family: 'Reenie Beanie', cursive;
+	font-size: 200%;
+}
+
+.dropdown-item{
+	font-family: 'Reenie Beanie', cursive;
+	font-size: 200%;
+}
+
+
