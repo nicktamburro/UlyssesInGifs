@@ -15,6 +15,8 @@ let picDiv;
 //i THINK this should be here for chapter 1 to just load up, but not sure....
 //wordMaker(telemachus);
 
+//preventDefault isn't fixing the no clicking between chapters... 
+
 $("#Telemachus").click(function(){
     event.preventDefault();
     wordMaker(telemachus);
@@ -63,8 +65,6 @@ for (i=0; i<words.length; i++){
                         picDiv.prepend(placeholder);
                         }
                     //var gifDiv = $('<div/>');    
-                    //TODO results[0] is undefined
-                    //fix this tomorrow, there's no loop, I'm just doing it weird...
                     gif.attr('src', results[0].images.fixed_height.url);
                     gif.attr('data-still', results[0].images.fixed_height_still.url)
                     gif.attr('data-animate', results[0].images.fixed_height.url)
