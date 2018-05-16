@@ -61,7 +61,7 @@ for (i=0; i<words.length; i++){
                 gif.addClass('myImg');
 
                     if(results[0] == undefined){
-                        let placeholder = $("<img src='what.gif'>");
+                        let placeholder = $("<img id='whatgif' src='what.gif'>");
                         picDiv.prepend(placeholder);
                         }
                     //var gifDiv = $('<div/>');    
