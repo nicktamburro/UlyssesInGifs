@@ -9,16 +9,23 @@
 #siteName{
 	font-family: 'Reenie Beanie', cursive;
 	font-size: 300%;
+	color: #EACAB7;
 }
 
 #navbarDropdownMenuLink{
 	font-family: 'Reenie Beanie', cursive;
 	font-size: 200%;
+	color: #EACAB7;
+}
+
+.dropdown-menu{
+	background-color: #0E647B;
 }
 
 .dropdown-item{
 	font-family: 'Reenie Beanie', cursive;
 	font-size: 200%;
+	color: #EACAB7;
 }
 
 #row1{
@@ -27,6 +34,20 @@
 
 #subtitle{
 	margin-left: 10%;
+}
+
+.navbar {
+	background-image: url(./cover.PNG);
+	background-size: cover;
+}
+
+.whiteText{
+	color: #EACAB7;
+}
+
+
+#body {
+	background-color: #0E647B;
 }
 
 
