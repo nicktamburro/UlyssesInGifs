@@ -1,5 +1,6 @@
 #gifs-here{
 	font-family: 'Libre Baskerville', serif;
+	color: #EACAB7;
 }
 
 #whatgif{
@@ -47,6 +48,7 @@
 
 
 #body {
+	background-image: url(./cover.PNG);
 	background-color: #0E647B;
 }
 
