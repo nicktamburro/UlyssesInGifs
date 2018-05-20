@@ -38,7 +38,8 @@
 }
 
 .navbar {
-	background-image: url(./cover.PNG);
+	background-image: url(./coverSmall.png);
+	background-position: 0, 10%;
 	background-size: cover;
 	opacity: 0.95;
 }
@@ -49,8 +50,8 @@
 
 
 #body {
-	background-image: url(./blurCover.svg);
 	background-color: #0E647B;
+	
 }
 
 
