@@ -19,16 +19,19 @@ let picDiv;
 
 $("#Telemachus").click(function(){
     event.preventDefault();
+    $("#gifs-here").empty();
     wordMaker(telemachus);
 })
 
 $("#Nestor").click(function() {
     event.preventDefault();
+    $("#gifs-here").empty();
     wordMaker(nestor);
 });
 
 $("#Proteus").click(function(){
     event.preventDefault();
+    $("#gifs-here").empty();
     wordMaker(proteus);
 })
 
