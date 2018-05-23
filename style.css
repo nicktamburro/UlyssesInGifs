@@ -11,6 +11,7 @@
 	font-family: 'Reenie Beanie', cursive;
 	font-size: 300%;
 	color: #0E647B;
+	margin-left: 3%;
 }
 
 .chapterLink{
@@ -35,11 +36,11 @@
 }
 
 #row1{
-	width: 35%;
+	
 }
 
 #subtitle{
-	margin-left: 10%;
+	margin-left: 35%;
 }
 
 .navbar {
