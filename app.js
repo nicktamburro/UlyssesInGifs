@@ -8,6 +8,22 @@ var GiphyKey = config.GiphyKey;
 var telemachus = "STATELY, PLUMP BUCK MULLIGAN CAME FROM THE STAIRHEAD, bearing a bowl of lather on which a mirror and a razor lay crossed. A yellow dressing gown, ungirdled, was sustained gently-behind him by the mild morning air. He held the bowl aloft and intoned: Introibo ad altare Dei. Halted, he peered down the dark winding stairs and called up coarsely" 
 var nestor = "YOU, COCHRANE, WHAT CITY SENT FOR HIM? -- Tarentum, sir. -- Very good. Well? -- There was a battle, sir. -- Very good. Where? The boy's blank face asked the blank window. Fabled by the daughters of memory."
 var proteus = "INELUCTABLE MODALITY OF THE VISIBLE: AT LEAST THAT IF NO MORE, thought through my eyes. Signatures of all things I am here to read, seaspawn and seawrack, the nearing tide, that rusty boot. Snotgreen, bluesilver, rust: coloured signs. Limits of the diaphane. But he adds: in bodies."
+var calypso = "";
+var lotusEaters= "";
+var hades = "";
+var aeolus = "";
+var lestrygonians = "";
+var scylla = "";
+var wanderingRocks = "";
+var sirens= "";
+var cyclops = "";
+var nausicaa = "";
+var oxen = "";
+var circe = "";
+var eumaeus = "";
+var ithaca = "";
+var penelope = "";
+
 
 let words; 
 let picDiv;
