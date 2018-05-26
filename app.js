@@ -33,6 +33,12 @@ let picDiv;
 
 //preventDefault isn't fixing the no clicking between chapters... 
 
+
+//here, think of something like to getElementbyID, so we don't have to write this click function 18 times... 
+//
+
+//or first, make a link Object, dynamically create all of them? and they all have a this.name
+//so something like that?
 $("#Telemachus").click(function(){
     event.preventDefault();
     $("#gifs-here").empty();
