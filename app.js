@@ -27,6 +27,8 @@ var penelope = "YES BECAUSE HE NEVER DID A THING LIKE THAT BEFORE AS ASK TO get 
 
 let words; 
 let picDiv;
+let randomPage;
+
 
 //i THINK this should be here for chapter 1 to just load up, but not sure....
 //wordMaker(telemachus);
